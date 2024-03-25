@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
+import '../style/style.css'
 
 function Navbar(){
     return(
+        //Add a bootstrap overrides ID
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
             <a className="navbar-brand" href="#">Navbar</a>
@@ -11,16 +13,16 @@ function Navbar(){
             <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                <Link to="/"><a className="nav-link active" aria-current="page">Home</a></Link>
+                <Link to="/" id="active-navbar" className="nav-link" aria-current="page">Home</Link>
                 </li>
                 <li className="nav-item">
-                <Link to="/experience"><a className="nav-link" aria-current="page">Experience</a></Link>
+                <Link to="/experience" className="nav-link" aria-current="page">Experience</Link>
                 </li>
                 <li className="nav-item">
-                <Link to="/projects"><a className="nav-link" aria-current="page">Projects</a></Link>
+                <Link to="/projects" className="nav-link" aria-current="page">Projects</Link>
                 </li>
                 <li className="nav-item">
-                <Link to="/quotes"><a className="nav-link" aria-current="page">Quotes</a></Link>
+                <Link to="/quotes" className="nav-link" aria-current="page">Quotes</Link>
                 </li>
             </ul>
             </div>

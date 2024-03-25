@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Quote from './components/Quote'
 
 import 'bootstrap/dist/css/bootstrap.css'
+import './style/style.css'
 
 function App(){
   return(
