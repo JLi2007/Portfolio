@@ -1,4 +1,32 @@
-#active-navbar {
-    color: blue;
+/* GENERAL--------------------------------------------------------------------------------------- */
+:root {
+    --dark-color: rgb(5, 26, 60);
+    --active-color: rgb(120, 154, 255);
+    --light-color: rgba(31, 139, 255, 0.845);
+}
+
+.background-container{
+    height: 100vh;
+    background-color: var(--active-color);
+    overflow: none;
+}
+
+/* NAVBAR--------------------------------------------------------------------------------------- */
+
+#navbar-overides{
+    background-color: var(--dark-color) !important;
+}
+
+#bootstrap-overides .nav-link , #bootstrap-overides .navbar-brand{
+    color: var(--light-color);
+}
+
+#bootstrap-overides #active-navbar {
+    color: var(--active-color);
     font-weight: bold;
-  }
+}
+
+/* HOME--------------------------------------------------------------------------------------- */
+
+
+

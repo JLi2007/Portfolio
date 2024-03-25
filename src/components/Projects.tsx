@@ -1,9 +1,11 @@
-const home = "Hello, this is the projects page";
+import '../style/style.css';
 
 function Projects() {
   return (
     <>
-      {home}
+    <div className='background-container'>
+      <p>This is the projects page.</p>
+    </div>
     </>
   );
 }

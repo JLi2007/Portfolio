@@ -1,12 +1,13 @@
 import { Link } from 'react-router-dom';
-import '../style/style.css'
+import '../style/style.css';
 
 function Navbar(){
     return(
         //Add a bootstrap overrides ID
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-            <a className="navbar-brand" href="#">Navbar</a>
+        <nav id="navbar-overides" className="navbar navbar-expand-lg bg-body-tertiary">
+        <div id="bootstrap-overides" className="container-fluid">
+            <img src="../../assets/logo.png" style={{width: '25px', height: '25px'}}></img>
+            <a className="navbar-brand">Porfolio</a>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
             </button>

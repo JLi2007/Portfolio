@@ -1,9 +1,13 @@
-const home = "Hello, this is the quotes page";
+import '../style/style.css';
 
 function Quote() {
   return (
     <>
-      {home}
+          <>
+    <div className='background-container'>
+      <p>This is the quotes page.</p>
+    </div>
+    </>
     </>
   );
 }
