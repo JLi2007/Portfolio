@@ -1,24 +1,38 @@
 /* GENERAL--------------------------------------------------------------------------------------- */
 :root {
-    --dark-color: rgb(5, 26, 60);
-    --active-color: rgb(120, 154, 255);
-    --light-color: rgba(31, 139, 255, 0.845);
+    --gradient-color: conic-gradient(from 90deg at 50% 0%, #000000, 30%, #000845, #070047);
+    --dark-color: #000845;
+    --navbar-color: conic-gradient(from 90deg at 50% 0%, #4c92ed, 30%, #589df5, #589df5);
+    /* --navbar-color: linear-gradient(to bottom, #589df5 90%,#2364b8 5%, #040122 100%); */
+    --active-color: rgba(0, 0, 0, 0.856);
+    --font-color: #589df5;
+    --unique-color-1: #ff3e3e;
+    --unique-color-2: #3eff85;
+    --unique-color-3: #ff3ef5;
+    --unique-color-4: #ffe23e;
+    --unique-color-5: #983eff;
+    --unique-color-6: #3ea8ff;
+}
+
+/* Unhide it later if needed */
+*{
+    overflow: hidden;
 }
 
 .background-container{
     height: 100vh;
-    background-color: var(--active-color);
-    overflow: none;
+    background: var(--gradient-color);
+    color: var(--font-color);
 }
 
 /* NAVBAR--------------------------------------------------------------------------------------- */
 
 #navbar-overides{
-    background-color: var(--dark-color) !important;
+    background: var(--navbar-color) !important;
 }
 
 #bootstrap-overides .nav-link , #bootstrap-overides .navbar-brand{
-    color: var(--light-color);
+    color: var(--dark-color);
 }
 
 #bootstrap-overides #active-navbar {
