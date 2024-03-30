@@ -7,6 +7,7 @@ import Quote from './components/Quote'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import './style/style.css'
+import 'bootstrap/dist/js/bootstrap.bundle.js'
 
 function App(){
   return(
