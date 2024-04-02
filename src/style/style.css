@@ -1,11 +1,11 @@
 /* GENERAL--------------------------------------------------------------------------------------- */
 :root {
-    --gradient-color: conic-gradient(from 90deg at 50% 0%, #000000, 30%, #000845, #070047);
+    --gradient-color: conic-gradient(from 90deg at 100% 0%, #000000, 50%, #0f1967, #01002e);
     --dark-color: #000845;
-    --navbar-color: conic-gradient(from 90deg at 50% 0%, #4c92ed, 30%, #589df5, #589df5);
+    --navbar-color: conic-gradient(from 90deg at 50% 0%, #468eec, 30%, #3b86e8, #307de1);
     /* --navbar-color: linear-gradient(to bottom, #589df5 90%,#2364b8 5%, #040122 100%); */
     --active-color: rgba(0, 0, 0, 0.856);
-    --font-color: #589df5;
+    --font-color: #468eec;
     --unique-color-1: #ff3e3e;
     --unique-color-2: #3eff85;
     --unique-color-3: #ff3ef5;
@@ -14,15 +14,20 @@
     --unique-color-6: #3ea8ff;
 }
 
+
 /* Unhide it later if needed */
 *{
     overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 .background-container{
-    height: 100vh;
     background: var(--gradient-color);
     color: var(--font-color);
+    height: 100vh;
+    width: 100%;
 }
 
 /* NAVBAR--------------------------------------------------------------------------------------- */
@@ -31,20 +36,49 @@
     background: var(--navbar-color) !important;
 }
 
-#bootstrap-overides .nav-link , #bootstrap-overides .navbar-brand{
+#bootstrap-overides-nav .nav-link , #bootstrap-overides-nav .navbar-brand{
     color: var(--dark-color);
 }
 
-#bootstrap-overides #active-navbar {
-    color: var(--active-color);
+#bootstrap-overides-nav .active {
+    color: var(--dark-color);
     font-weight: bold;
 }
 
 /* HOME--------------------------------------------------------------------------------------- */
 
-/* 
-#carouselExampleCaptions{
-    width: 50vh;
-    height: 50vh;
-} */
+#bootstrap-overides-home{
+    width: 100%;
+    height: 100vh;
+}
 
+#carouselExampleCaptions{
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--dark-color);
+}
+
+#bootstrap-overides-home #carouselExampleCaptions h5, 
+#bootstrap-overides-home #carouselExampleCaptions p{
+    color: var(--dark-color);
+}
+
+#bootstrap-overides-home #carouselExampleCaptions h5{
+    font-weight: bold;
+}
+
+#bootstrap-overides-home .bg-primary{
+    background-color: var(--font-color) !important;
+}
+
+#bootstrap-overides-home #button{
+    background-color: var(--dark-color);
+}
+
+#bootstrap-overides-home .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000845' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+   
+#bootstrap-overides-home .carousel-control-next-icon {
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000845' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
