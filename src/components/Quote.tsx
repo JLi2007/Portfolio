@@ -4,7 +4,7 @@ function Quote() {
   return (
     <>
     <div className='background-container'>
-      <p>This is the quotes page.</p>
+      <p>This is the quotes page. Idea-movie and typewriter effect</p>
     </div>
     </>
   );

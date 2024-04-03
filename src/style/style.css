@@ -1,11 +1,12 @@
 /* GENERAL--------------------------------------------------------------------------------------- */
 :root {
-    --gradient-color: conic-gradient(from 90deg at 100% 0%, #000000, 50%, #0f1967, #01002e);
+    --gradient-color: conic-gradient(from 90deg at 100% 0%, #000413, 50%, #030830, #020121);
     --dark-color: #000845;
+    --dark-color-bg: #020121;
     --navbar-color: conic-gradient(from 90deg at 50% 0%, #468eec, 30%, #3b86e8, #307de1);
-    /* --navbar-color: linear-gradient(to bottom, #589df5 90%,#2364b8 5%, #040122 100%); */
     --active-color: rgba(0, 0, 0, 0.856);
-    --font-color: #468eec;
+
+    --font-color: #8da3bf;
     --unique-color-1: #ff3e3e;
     --unique-color-2: #3eff85;
     --unique-color-3: #ff3ef5;
@@ -33,16 +34,25 @@
 /* NAVBAR--------------------------------------------------------------------------------------- */
 
 #navbar-overides{
-    background: var(--navbar-color) !important;
+    background: var(--dark-color-bg) !important;
+    transition: background 0.5s ease-out;
 }
 
 #bootstrap-overides-nav .nav-link , #bootstrap-overides-nav .navbar-brand{
-    color: var(--dark-color);
+    color: var(--font-color);
 }
 
 #bootstrap-overides-nav .active {
-    color: var(--dark-color);
+    color: var(--font-color);
     font-weight: bold;
+}
+
+#navbar-overides:hover{
+    background: var(--font-color) !important;
+}
+
+#navbar-overides:hover .nav-link, #navbar-overides:hover a{
+    color: var(--dark-color);
 }
 
 /* HOME--------------------------------------------------------------------------------------- */
@@ -55,12 +65,14 @@
 #carouselExampleCaptions{
     width: 100%;
     height: 100%;
-    border: 5px solid var(--dark-color);
+    border-top: 5px solid var(--dark-color);
+    border-bottom: 5px solid var(--dark-color);
+    border-left: 5px solid var(--dark-color);
 }
 
 #bootstrap-overides-home #carouselExampleCaptions h5, 
 #bootstrap-overides-home #carouselExampleCaptions p{
-    color: var(--dark-color);
+    color: var(--font-color);
 }
 
 #bootstrap-overides-home #carouselExampleCaptions h5{
@@ -72,13 +84,69 @@
 }
 
 #bootstrap-overides-home #button{
-    background-color: var(--dark-color);
+    background-color: var(--font-color);
 }
 
 #bootstrap-overides-home .carousel-control-prev-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000845' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='983eff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
    
 #bootstrap-overides-home .carousel-control-next-icon {
-     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000845' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='983eff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/* Experience--------------------------------------------------------------------------------------- */
+
+#bootstrap-overides-experience .col-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 5px solid var(--font-color);
+    padding-left: calc(100vw - 89%);
+    padding-right: calc(100vw - 89%);
+    padding-top: calc(100vh - 68%);
+    padding-bottom: calc(100vh - 68%);
+    
+    margin-top: calc(100vh - 75%);
+}
+
+#bootstrap-overides-experience #boxes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#bootstrap-overides-experience #box-right-1, #bootstrap-overides-experience #box-right-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(100vw - 109%);
+}
+
+#bootstrap-overides-experience #box-left-1, #bootstrap-overides-experience #box-right-1{
+    margin-top: 5%;
+}
+
+#bootstrap-overides-experience .box{
+    background: var(--font-color);
+    border: 5px solid var(--dark-color);
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(218, 227, 251, 0.20);
+    text-align: center;
+    transition: all 0.4s ease;
+    color: var(--dark-color)
+}
+
+#bootstrap-overides-experience .box:hover{
+    background-color: var(--dark-color);
+    color: var(--font-color);
+}
+
+/* Projects--------------------------------------------------------------------------------------- */
+
+#bootstrap-overides-projects #boxes{
+    border: 5px solid white;
+    padding: 10px;
 }
