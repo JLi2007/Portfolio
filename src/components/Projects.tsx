@@ -7,12 +7,12 @@ function Projects() {
       <p>This is the projects page.</p>
       <div id="boxes-group" className="container text-center">
         <div id="boxes" className="row justify-content-center">
-          <div className="col-4 box">
+          <div className="col-7 box">
             One of column
           </div>
         </div>
 
-        <div id="boxes" className="row justify-content-between">
+        <div id="boxes" className="row justify-content-center">
           <div className="col-4 box">
             One of two columns
           </div>
@@ -22,13 +22,7 @@ function Projects() {
         </div>
 
         <div id="boxes" className="row justify-content-evenly">
-          <div className="col-3 box">
-            One of three columns
-          </div>
-          <div className="col-3 box">
-            One of three columns
-          </div>
-          <div className="col-3 box">
+          <div className="col-6 box">
             One of three columns
           </div>
         </div>
