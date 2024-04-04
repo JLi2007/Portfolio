@@ -18,7 +18,7 @@
 
 /* Unhide it later if needed */
 *{
-    overflow: hidden;
+    overflow-x: hidden;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -35,7 +35,17 @@
 
 #navbar-overides{
     background: var(--dark-color-bg) !important;
-    transition: background 0.5s ease-out;
+    transition: background 0.6s ease-out;
+    box-shadow: 0 5px 10px rgba(218, 227, 251, 0.05);  
+}
+
+#navbar-overides:hover{
+    background: var(--font-color) !important;
+    box-shadow: 0 5px 10px rgba(173, 192, 243, 0.3);
+}
+
+#navbar-overides:hover .nav-link, #navbar-overides:hover a{
+    color: var(--dark-color);
 }
 
 #bootstrap-overides-nav .nav-link , #bootstrap-overides-nav .navbar-brand{
@@ -45,14 +55,6 @@
 #bootstrap-overides-nav .active {
     color: var(--font-color);
     font-weight: bold;
-}
-
-#navbar-overides:hover{
-    background: var(--font-color) !important;
-}
-
-#navbar-overides:hover .nav-link, #navbar-overides:hover a{
-    color: var(--dark-color);
 }
 
 /* HOME--------------------------------------------------------------------------------------- */
@@ -145,8 +147,29 @@
 }
 
 /* Projects--------------------------------------------------------------------------------------- */
+#bootstrap-overides-projects{
+    height:auto;
+}
 
-#bootstrap-overides-projects #boxes{
-    border: 5px solid white;
+#bootstrap-overides-projects p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: calc(100vh - 65%);
+}
+
+#bootstrap-overides-projects #boxes-group{
     padding: 10px;
+}
+
+
+#bootstrap-overides-projects .box{
+    padding-left: calc(100vw - 89%);
+    padding-right: calc(100vw - 89%);
+    padding-top: calc(100vh - 68%);
+    padding-bottom: calc(100vh - 68%);
+    border: 5px solid var(--dark-color);
+    background-color: var(--font-color);
+    border-radius: 15px;
+
 }
