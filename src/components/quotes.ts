@@ -12,5 +12,5 @@ export const quotes: Quote[]=[
     {text:"Nobody has enough talent to live on talent alone. Even when you have talent, a life without work goes nowhere.", author:"Arsene Wenger"},
     {text:"Hard work beats talent when talent doesn't work hard", author:"Tim Notke"},
     {text:"Talent hits a target no one else can hit; Genius hits a target no one else can see", author:"Arthur Schopenhauer"},
-    {text:"😂Be happy!😃", author:"Me"}
+    {text:"😂Be happy!😃", author:"Me, 2024"}
 ]

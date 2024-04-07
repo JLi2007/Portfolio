@@ -1,29 +1,45 @@
+import { useState, useEffect } from 'react';
 import '../style/style.css';
 import Typewriter from 'typewriter-effect';
+import {quotes} from './quotes';
 
 function Quote() {
+  const [currentQuote, setCurrentQuote] = useState(1);
+
+  useEffect(()=>{
+    const interval = setInterval(()=>{
+      setCurrentQuote((Quote) => (Quote + 1) % quotes.length);
+    }, 15000);
+
+    return() => clearInterval(interval);
+  }, [])
+
+
   return (
     <div id="bootstrap-overides-quotes" className='background-container'>
 
-      <div className="cinema-img">
 
-      </div>
+        <div className="inside-text container">
+          <p>Collection of some standout quotes. Each animation is 15s</p>
 
-      <p>This is the quotes page. Idea-movie and typewriter effect</p>
-      <Typewriter
-        onInit={(typewriter) => {
-          typewriter.typeString('Hello World!')
-            .callFunction(() => {
-              console.log('String typed out!');
-            })
-            .pauseFor(2500)
-            .deleteAll()
-            .callFunction(() => {
-              console.log('All strings were deleted');
-            })
-            .start();
-        }}
-      />
+
+          <div className="typewriter">
+            <Typewriter
+              options={{
+                autoStart: true,       
+              }}
+              onInit={(typewriter) => {
+                typewriter.typeString(quotes[currentQuote].text)
+                  .changeDelay(1)
+                  .pauseFor(3000)
+                  .deleteAll(10)
+                  .start()
+              }}
+              key={currentQuote}
+            />
+          </div>
+
+        </div>
     </div>
   );
 }
