@@ -1,10 +1,34 @@
-import { NavLink} from 'react-router-dom';
+import { NavLink, useNavigate, useLocation} from 'react-router-dom';
+import { useEffect } from 'react';
 import '../style/style.css';
 
 function Navbar(){
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    useEffect(() => {
+        const keyPress = (event: KeyboardEvent) =>{
+            if(event.key === 'ArrowRight'){
+                if(location.pathname === '/'){
+                    navigate('/experience')
+                } if(location.pathname === './experience'){
+                    navigate('/projects')
+                } if(location.pathname === './projects'){
+                    navigate('/quote')
+                } if(location.pathname === './quote'){
+                    navigate('/')
+                }
+            }
+        }
+
+        window.addEventListener('keydown', keyPress)
+        return () => {
+            window.removeEventListener('keydown', keyPress);
+          };
+    },[navigate, location.pathname])
 
     return(
-        //Add a bootstrap overrides ID
+        
         <nav id="navbar-overides" className="navbar navbar-expand-lg bg-body-tertiary">
             <div id="bootstrap-overides-nav" className="container-fluid">
                 <img src="../../assets/logo.png" style={{width: '25px', height: '25px'}}></img>
