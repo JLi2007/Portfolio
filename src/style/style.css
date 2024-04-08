@@ -151,7 +151,8 @@
 
 /* Projects--------------------------------------------------------------------------------------- */
 #bootstrap-overides-projects{
-    height:auto;
+    height:100vh;
+    overflow: none;
 }
 
 #bootstrap-overides-projects p{
@@ -203,7 +204,7 @@
 
 #bootstrap-overides-quotes .inside-text{
     color: var(--font-color);
-    font-size: 20px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -211,6 +212,7 @@
 
 #bootstrap-overides-quotes .container{
     width: 80%;
+    border: 5px solid white;
 }
 
 #bootstrap-overides-quotes p{
@@ -222,6 +224,6 @@
 
 #bootstrap-overides-quotes .typewriter{
     display: flex;
-    font-size: 60px;
+    font-size: calc(5vw - 3px);
 }
 
