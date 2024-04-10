@@ -23,7 +23,7 @@ function Projects() {
           scaleMobile: 1.00,
           color: 0x5381e3,
           backgroundColor: 0x020121,
-          points: 16.00,
+          points: 13.00,
           maxDistance: 29.00,
           spacing: 17.00
         })

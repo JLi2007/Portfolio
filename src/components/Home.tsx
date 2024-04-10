@@ -8,7 +8,7 @@ function Home() {
         <div className="row align-items-start">
           <div id="col1" className="col-6">
             
-            <div id="carouselExampleCaptions" className="carousel slide w-100">
+            <div id="carouselExampleCaptions" className="carousel slide w-100" data-bs-ride="carousel">
               <div className="carousel-indicators">
                 <button id="button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button id="button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -53,7 +53,7 @@ function Home() {
           </div>
 
           <div id="col2" className="col-6">
-            <h1>Welcome to My Portfolio</h1>
+            <h1>Young Chinese Boy</h1>
             <p>This is the home page.</p>
             
           </div>

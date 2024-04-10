@@ -1,8 +1,35 @@
+import { useRef, useState } from "react";
+import CLOUDS from "vanta/dist/vanta.clouds2.min";
+import * as THREE from "three";
+
 import '../style/style.css';
+import { useEffect } from "react";
 
 function Experience() {
+  const [vantaEffect, setVantaEffect] = useState(null);
+  const vantaRef = useRef(null);
+
+  useEffect(()=> {
+    if(!vantaEffect){
+      setVantaEffect(
+        CLOUDS({
+          el: vantaRef.current,
+          THREE: THREE,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.00,
+          minWidth: 200.00,
+          scale: 1.00,
+          texturePath: "../../assets/texture.png"
+        })
+      )
+    }
+    return
+  }, [vantaEffect])
+
   return (
-    <div id="bootstrap-overides-experience" className="background-container">
+    <div id="bootstrap-overides-experience" className="background-container" ref={vantaRef}>
 
       <div className="container text-center">
         <br /> <br />
