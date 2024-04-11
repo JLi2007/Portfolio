@@ -1,9 +1,8 @@
-import { useRef, useState } from "react";
-import CLOUDS from "vanta/dist/vanta.clouds2.min";
+import { useRef, useState, useEffect } from "react";
+import NET from "vanta/dist/vanta.net.min";
 import * as THREE from "three";
 
 import '../style/style.css';
-import { useEffect } from "react";
 
 function Experience() {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -12,7 +11,7 @@ function Experience() {
   useEffect(()=> {
     if(!vantaEffect){
       setVantaEffect(
-        CLOUDS({
+        NET({
           el: vantaRef.current,
           THREE: THREE,
           mouseControls: true,
@@ -21,7 +20,12 @@ function Experience() {
           minHeight: 200.00,
           minWidth: 200.00,
           scale: 1.00,
-          texturePath: "../../assets/texture.png"
+          scaleMobile: 1.00,
+          color: 0x7a91b0,
+          backgroundColor: 0x020121,
+          points: 8.00,
+          maxDistance: 13.00,
+          spacing: 13.00
         })
       )
     }

@@ -20,7 +20,7 @@ function Quote() {
   return (
     <div id="bootstrap-overides-quotes" className='background-container'>
 
-        <div className="inside-text container">
+        <div className="inside-text">
           <p><img src="../../assets/logo.png" style={{width: '30px', height: '30px', marginRight:'5px'}}></img> James Li Productions</p>
 
           <div className="typewriter">
@@ -32,6 +32,7 @@ function Quote() {
               onInit={(typewriter) => {
                 typewriter.typeString(quotes[currentQuote].text)
                   .start()
+                  .typeString('<br>')
                 if(currentQuote==8 || currentQuote==0){
                   typewriter.typeString(quotes[currentQuote].author)
                   .start()

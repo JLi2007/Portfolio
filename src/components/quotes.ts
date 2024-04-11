@@ -5,7 +5,7 @@ interface Quote{
 
 export const quotes: Quote[]=[
     {text: "Dreams are not what you see in your sleep, dreams are things which do not let you sleep.", author:" - Cristiano Ronaldo"},
-    {text: "Life is like an apple! Even though it's hard. it's still sweet!", author: " - Ethan Xing(2024)"},
+    {text: "Life is like an apple! Even though it's hard. it's still sweet!", author: " - Ethan Xing (english teacher NOT proud), 2024"},
     {text: "Knowing is not enough, we must apply. Willing is not enough, we must do", author:" - Bruce Lee"},
     {text: "Don't think small and expect to have a big life.", author:" - Marianne Williamson"},
     {text: "If opportunity doesn't knock, build a door", author:" - Milton Berle"},

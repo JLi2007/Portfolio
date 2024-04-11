@@ -1,7 +1,7 @@
 /* GENERAL--------------------------------------------------------------------------------------- */
 :root {
-    --gradient-color: conic-gradient(from 90deg at 100% 0%, #000413, 50%, #030830, #020121);
-    --dark-color: #000845;
+    --gradient-color: conic-gradient(from 90deg at 100% 0%, #000413, 50%, #020729, #020121);
+    --dark-color: #020729;
     --dark-color-bg: #020121;
     --navbar-color: conic-gradient(from 90deg at 50% 0%, #468eec, 30%, #3b86e8, #307de1);
     --active-color: rgba(0, 0, 0, 0.856);
@@ -29,7 +29,6 @@
     color: var(--font-color);
     height: 100vh;
     width: 100%;
-    overflow: hidden;
 }
 
 /* NAVBAR--------------------------------------------------------------------------------------- */
@@ -211,24 +210,42 @@
     color: var(--font-color);
     font-size: 16px;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-}
-
-#bootstrap-overides-quotes .container{
-    width: 80%;
-    border: 5px solid white;
+    margin-right: calc(100% - 90%);
+    margin-left: calc(100% - 90%);
+    margin-top: calc(100% - 88%);
 }
 
 #bootstrap-overides-quotes p{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: calc(100% - 87%);
 }
 
 #bootstrap-overides-quotes .typewriter{
     display: flex;
-    font-size: calc(5vw - 3px);
+    font-size: 3.5rem;
+}
+
+@media (max-width: 1125px){
+    #bootstrap-overides-quotes .inside-text{
+        width: 99%;
+        margin-top: calc(100% - 80%);
+    }
+    #bootstrap-overides-quotes .typewriter{
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 800px){
+    #bootstrap-overides-quotes .inside-text{
+        width: 99%;
+        margin-top: calc(100% - 70%);
+    }
+    #bootstrap-overides-quotes .typewriter{
+        font-size: 2.5rem;
+    }
 }
 
