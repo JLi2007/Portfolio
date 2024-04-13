@@ -4,7 +4,8 @@ import Typewriter from 'typewriter-effect';
 import {quotes} from './quotes';
 
 function Quote() {
-  const [currentQuote, setCurrentQuote] = useState(0);
+  const randomNumber = Math.floor(Math.random() * 10) + 1
+  const [currentQuote, setCurrentQuote] = useState(randomNumber);
   const longPause:number = 4000;
   const shortPause:number = 1500;
 

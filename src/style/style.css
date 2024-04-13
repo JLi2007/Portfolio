@@ -1,11 +1,13 @@
 /* GENERAL--------------------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
     --gradient-color: conic-gradient(from 90deg at 100% 0%, #000413, 50%, #020729, #020121);
     --dark-color: #020729;
     --dark-color-bg: #020121;
     --navbar-color: conic-gradient(from 90deg at 50% 0%, #468eec, 30%, #3b86e8, #307de1);
     --active-color: rgba(0, 0, 0, 0.856);
-
     --font-color: #7a91b0;
     --unique-color-1: #ff3e3e;
     --unique-color-2: #3eff85;
@@ -13,8 +15,11 @@
     --unique-color-4: #ffe23e;
     --unique-color-5: #983eff;
     --unique-color-6: #3ea8ff;
-}
 
+    --font-DM: 'DM Serif Display', serif;
+    --font-FRL: 'Frank Ruhl Libre, serif';
+    --font-DOM: 'Domine, serif';
+}
 
 /* Unhide it later if needed */
 *{
@@ -29,6 +34,11 @@
     color: var(--font-color);
     height: 100vh;
     width: 100%;
+    font-family: var(--font-DOM);
+}
+
+.background-container h1{
+    font-family: var(--font-DM);
 }
 
 /* NAVBAR--------------------------------------------------------------------------------------- */
@@ -37,6 +47,7 @@
     background: var(--dark-color-bg) !important;
     transition: background 0.6s ease-out;
     box-shadow: 0 5px 10px rgba(218, 227, 251, 0.05);  
+    font-family: var(--font-DOM);
 }
 
 #navbar-overides:hover{
@@ -55,7 +66,22 @@
 #bootstrap-overides-nav .active {
     color: var(--font-color);
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
+    position: relative;
+}
+
+#bootstrap-overides-nav .active::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background-color: var(--font-color);
+}
+
+#bootstrap-overides-nav .active:hover::after{
+    background-color: var(--dark-color);
 }
 
 /* HOME--------------------------------------------------------------------------------------- */
@@ -144,7 +170,7 @@
     box-shadow: 0 5px 10px rgba(218, 227, 251, 0.20);
     text-align: center;
     transition: all 0.4s ease;
-    color: var(--dark-color)
+    color: var(--dark-color);
 }
 
 #bootstrap-overides-experience .box:hover{
@@ -157,6 +183,7 @@
 /* Projects--------------------------------------------------------------------------------------- */
 #bootstrap-overides-projects{
     height:auto;
+    overflow: hidden;
 }
 
 #bootstrap-overides-projects p{
