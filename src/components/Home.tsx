@@ -57,8 +57,8 @@ function Home() {
               <h1>Student • Coder • Athlete </h1>
               <h6>In that order</h6>
             </div>
-            
-            <p>This is the home page.</p>
+
+            <p>This is the home page j.</p>
           </div>
         </div>
       </div>
