@@ -22,7 +22,7 @@ function Quote() {
     <div id="bootstrap-overides-quotes" className='background-container'>
 
         <div className="inside-text">
-          <p><img src="../../assets/logo-blur.png" style={{width: '30px', height: '30px', marginRight:'5px'}}></img> James Li Productions</p>
+          <p><img src="/logo-blur.png" style={{width: '30px', height: '30px', marginRight:'5px'}}></img> James Li Productions</p>
 
           <div className="typewriter">
             <Typewriter

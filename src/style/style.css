@@ -247,7 +247,7 @@
 /* Quotes--------------------------------------------------------------------------------------- */
 #bootstrap-overides-quotes{
     overflow: hidden;
-    background-image: url('../../assets/cinema-2.jpg');
+    background-image: url('/cinema-2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

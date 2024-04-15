@@ -5,7 +5,7 @@ function Navbar(){
     return(
         <nav id="navbar-overides" className="navbar navbar-expand-lg bg-body-tertiary">
             <div id="bootstrap-overides-nav" className="container-fluid">
-                <img src="../../assets/logo.png" style={{width: '25px', height: '25px', marginRight:'5px'}}></img>
+                <img src="/logo.png" style={{width: '25px', height: '25px', marginRight:'5px'}}></img>
                 <a className="navbar-brand">Porfolio</a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
