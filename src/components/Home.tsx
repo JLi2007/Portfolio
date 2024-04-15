@@ -53,9 +53,12 @@ function Home() {
           </div>
 
           <div id="col2" className="col-6">
-            <h1>Young Chinese Boy</h1>
-            <p>This is the home page.</p>
+            <div id="title">
+              <h1>Student • Coder • Athlete </h1>
+              <h6>In that order</h6>
+            </div>
             
+            <p>This is the home page.</p>
           </div>
         </div>
       </div>
