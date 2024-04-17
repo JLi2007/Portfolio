@@ -18,14 +18,14 @@ export const projects: Projects[]=[
         title: "WeatherMap",
         heading: "Learning Journey",
         link: "https://github.com/JLi2007/TS_WeatherProject_Mongo",
-        description: "A simple weather application by appearence. But outside the conventional minds, one would know it marks a journey of peaks and valleys. Persistance and discovery. Ambition and aspiration (👑 of yap) ",
+        description: "A simple weather application by appearence. But outside the conventional minds, one would know it marks a journey of peaks and valleys. Persistance and discovery. Ambition and aspiration. Switzerland and Nigeria. (👑 of yap) ",
         imageSrc: "../../public/weathermap.jpeg"
     },
     {
         title: "Plat.ai",
         heading: "Startup Foundations",
         link: "https://pitchplat.app/",
-        description: "Waiting list I contributed to. For a startup project.",
+        description: "Waiting list for a startup project. Minor contributor. ",
         imageSrc: "../../public/plat.png"
     },
     {

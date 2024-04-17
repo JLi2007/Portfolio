@@ -58,7 +58,8 @@ function Home() {
               <h6>In that order</h6>
             </div>
 
-            <p>This is the home page j.</p>
+            <h2>Meet James</h2>
+            <p>Coming from Waterloo, James Li is a high school student with aspirations in the tech field.</p>
           </div>
         </div>
       </div>

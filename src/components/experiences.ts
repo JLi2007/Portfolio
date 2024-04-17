@@ -9,20 +9,20 @@ export const experiences: Experiences[]=[
     {
         title:  "HighSchool Hacks - May 2023",
         heading: "Foundational Experience",
-        description: "First ever Hackathon with no coding ability? You already know how that went! ... ",
+        description: "First ever Hackathon with no coding ability? Imagine the scenes ... ",
         imageSrc: "../../public/hshacks.jpg"
     },
     {
         title:  "RythmHacks - September 2023",
         heading: "Successful Debut",
-        description: "Ambition paid off as I was able to create a working project and win a subcategory. All whilst being sleep deprived and heavily addicted to munching.",
+        description: "Mission succesful. Working project and a victory in a subcategory. All whilst being sleep deprived and heavily addicted to munching.",
         imageSrc: "../../public/rythmhacks.jpg"
     },
     {
         title:  "DeltaHacks - January 2024",
-        heading: "It Fell Apart",
-        description: "Entered with no team and no expectations. Exited with a team and ambitions to reach newer heights in the future. However, we did NOT cook on our project.",
-        imageSrc: "../../public/deltahacks.jpg"
+        heading: "Ups and Downs",
+        description: "Entered with no team and no expectations. Exited with a team and ambitions to reach newer heights in the future. The project broke, however 😢.",
+        imageSrc: "../../public/delta.jpg"
     },
     {
         title:  "GDSCHacks - May 2024",
