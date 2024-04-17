@@ -1,6 +1,4 @@
 /* GENERAL--------------------------------------------------------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Frank+Ruhl+Libre:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Domine:wght@400..700&family=Frank+Ruhl+Libre:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
     --gradient-color: conic-gradient(from 90deg at 100% 0%, #000413, 50%, #020729, #020121);
@@ -19,6 +17,7 @@
     --font-DM: 'DM Serif Display', serif;
     --font-FRL: 'Frank Ruhl Libre, serif';
     --font-DOM: 'Domine, serif';
+    --font-OS: 'Open Sans', sans-serif;
 }
 
 /* Unhide it later if needed */
@@ -84,8 +83,6 @@
     background-color: var(--dark-color);
 }
 
-
-
 /* #bootstrap-overides-nav .active:hover::after{
     background-color: var(--dark-color);
 } */
@@ -94,7 +91,7 @@
 
 #bootstrap-overides-home{
     width: 100%;
-    height: auto;
+    height: 100vh;
 }
 
 #carouselExampleCaptions{
