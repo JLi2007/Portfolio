@@ -15,7 +15,7 @@ export const projects: Projects[]=[
         imageSrc: "../../public/footprint.png"
     },
     {
-        title: "WeatherMap",
+        title: "Weathermap",
         heading: "Learning Journey",
         link: "https://github.com/JLi2007/TS_WeatherProject_Mongo",
         description: "A simple weather application by appearence. But outside the conventional minds, one would know it marks a journey of peaks and valleys. Persistance and discovery. Ambition and aspiration. Switzerland and Nigeria. (👑 of yap) ",

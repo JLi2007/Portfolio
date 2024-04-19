@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import NET from "vanta/dist/vanta.net.min";
 import * as THREE from "three";
+import {projects} from './project.ts'
 
 import '../style/style.css';
 
@@ -38,24 +39,26 @@ function Projects() {
       <div id="boxes-group" className="container text-center">
         <div id="boxes" className="row justify-content-center">
           <div className="col-7 box">
-            One of column
+            <h3>{projects[0].title}</h3>
           </div>
         </div>
 
         <div id="boxes" className="row justify-content-center">
           <div className="col-4 box">
-            One of two columns
+            1 of 2
           </div>
+
           <div className="col-4 box">
-            One of two columns
+            2 of 2
           </div>
         </div>
 
         <div id="boxes" className="row justify-content-evenly">
           <div className="col-6 box">
-            One of three columns
+            <h3></h3>
           </div>
         </div>
+
       </div>
     </div>
   );
