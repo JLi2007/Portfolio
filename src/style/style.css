@@ -151,38 +151,31 @@
 
 /* Experience--------------------------------------------------------------------------------------- */
 #bootstrap-overides-experience{
-    height: 100vh;
-}
-
-#bootstrap-overides-experience .col-6{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid var(--font-color);
-    padding-left: calc(100vw - 89%);
-    padding-right: calc(100vw - 89%);
-    padding-top: calc(100vh - 68%);
-    padding-bottom: calc(100vh - 68%);
-    
-    margin-top: calc(100vh - 75%);
+    height: auto;    
+    overflow: hidden;
 }
 
 #bootstrap-overides-experience #boxes{
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-
-#bootstrap-overides-experience #box-right-1, #bootstrap-overides-experience #box-right-2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: calc(100vw - 109%);
+#bootstrap-overides-experience .box{
+    border: 5px solid var(--font-color);
+    padding: 5px;
+    height: 50vh;
+    width: 40%;
+    margin-bottom: 5px;
 }
 
-#bootstrap-overides-experience #box-left-1, #bootstrap-overides-experience #box-right-1{
-    margin-top: 5%;
+#bootstrap-overides-experience .right{
+    margin-left: 15px;
+}
+
+#bootstrap-overides-experience .bottom{
+    margin-top: 15px;
 }
 
 #bootstrap-overides-experience .box{
@@ -190,9 +183,19 @@
     border: 5px solid var(--dark-color);
     border-radius: 15px;
     box-shadow: 0 5px 10px rgba(218, 227, 251, 0.15);
-    text-align: center;
     transition: all 0.4s ease;
     color: var(--dark-color);
+}
+
+#bootstrap-overides-experience .box img{
+    border: 1px solid var(--dark-color);
+    height: auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+#bootstrap-overides-experience .box h5{
+    text-decoration: underline;
 }
 
 #bootstrap-overides-experience .box:hover{
@@ -214,7 +217,6 @@
     justify-content: center;
     padding-top: 10px;
     width: 100%;
-    overflow: hidden;
 }
 
 #bootstrap-overides-projects #boxes-group{
@@ -257,6 +259,10 @@
     color: var(--dark-color);
 }
 
+#bootstrap-overides-projects .box h5:hover{
+    transform: scale(1.1);
+}
+
 #bootstrap-overides-projects .box img{
     border: 1px solid var(--dark-color);
     height: auto;
@@ -264,13 +270,13 @@
     border-radius: 5px;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 990px){
     #bootstrap-overides-projects .box img{
         width: 70%; 
     }
 }
 
-@media (max-width: 800px){
+@media (max-width: 769px){
     #bootstrap-overides-projects .box img{
         width: 90%; 
     }

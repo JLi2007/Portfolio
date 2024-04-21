@@ -3,6 +3,7 @@ import NET from "vanta/dist/vanta.net.min";
 import * as THREE from "three";
 
 import '../style/style.css';
+import { experiences } from "./experiences";
 
 function Experience() {
   const [vantaEffect, setVantaEffect] = useState(null);
@@ -37,15 +38,36 @@ function Experience() {
 
       <div className="container text-center">
         <br /> <br />
-        <p>Hello here are my experiences</p>
+        <p>What's a human without experiences</p>
         <div id="boxes" className="row">
-          <div id="box-left-1" className="col-6 col-sm-4 box">Text here1</div>
-          <div id="box-right-1" className="col-6 col-sm-4 box">Text here2 </div>
-          {/* Force next columns to break to new line */}
-          <div className="w-100"></div>
+          <div className="col-6 col-sm-4 box left top">
+            <h3>{experiences[0].title}</h3>
+            <img src={experiences[0].imageSrc}/>
+            <h5>{experiences[0].heading}</h5>
+            <p>{experiences[0].description}</p>
+          </div>
 
-          <div id="box-left-2" className="col-6 col-sm-4 box">Text here3</div>
-          <div id="box-right-2" className="col-6 col-sm-4 box">Text here4</div>
+          <div className="col-6 col-sm-4 box right top">
+            <h3>{experiences[1].title}</h3>
+            <img src={experiences[1].imageSrc}/>
+            <h5>{experiences[1].heading}</h5>
+            <p>{experiences[1].description}</p>
+          </div>
+
+          <div className="col-6 col-sm-4 box left bottom">
+           <h3>{experiences[2].title}</h3>
+            <img src={experiences[2].imageSrc}/>
+            <h5>{experiences[2].heading}</h5>
+            <p>{experiences[2].description}</p>
+          </div>
+
+          <div className="col-6 col-sm-4 box right bottom">
+            <h3>{experiences[3].title}</h3>
+            <img src={experiences[3].imageSrc}/>
+            <h5>{experiences[3].heading}</h5>
+            <p>{experiences[3].description}</p>
+          </div>
+          
         </div>
 
       </div>
