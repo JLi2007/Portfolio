@@ -35,7 +35,7 @@ function Projects() {
 
   return (
     <div id="bootstrap-overides-projects" className='background-container' ref={vantaRef}>
-      <p>Well every developper has projects, right?</p>
+      <p style={{marginTop:'50px'}}>Well every developer has projects, right?</p>
       <div id="boxes-group" className="container text-center">
         <div id="boxes-1" className="row justify-content-center boxes">
           <div className="col-7 box">

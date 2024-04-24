@@ -17,21 +17,21 @@ function Home() {
 
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src="/carousel1.jpg" className="d-block w-100" alt="..."/>
+                  <img src="/carousel1.jpg" className="d-block w-100"/>
                   <div className="carousel-caption d-none d-md-block">
                     <h5>First slide label</h5>
                     <p>Some representative placeholder content for the first slide.</p>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src="/carousel2.jpg" className="d-block w-100" alt="..."/>
+                  <img src="/carousel2.jpg" className="d-block w-100"/>
                   <div className="carousel-caption d-none d-md-block">
                     <h5>Second slide label</h5>
                     <p>Some representative placeholder content for the second slide.</p>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src="/carousel3.jpg" className="d-block w-100" alt="..."/>
+                  <img src="/carousel3.jpg" className="d-block w-100"/>
                   <div className="carousel-caption d-none d-md-block">
                     <h5>Third slide label</h5>
                     <p>Some representative placeholder content for the third slide.</p>
@@ -52,13 +52,13 @@ function Home() {
 
           </div>
 
-          <div id="col2" className="col-6">
+          <div id="col2" className="col-6" >
             <div id="title">
               <h1>Student • Coder • Athlete </h1>
-              <h6>In that order</h6>
+              <h6 style={{padding: '5px'}}>In that order</h6>
             </div>
 
-            <h2>Meet James</h2>
+            <h2 style={{padding: '5px'}}>Meet James</h2>
             <p>Coming from Waterloo, James Li is a high school student with aspirations in the tech field.</p>
           </div>
         </div>

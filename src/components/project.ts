@@ -32,7 +32,7 @@ export const projects: Projects[]=[
         title: "More To Come!",
         heading: "Nothing to see here",
         link: "https://en.wikipedia.org/wiki/Monkey",
-        description: "Tides of opportunities will wash up with many Hackathons approaching the island. This is only the beginning.",
+        description: "This is only the beginning.",
         imageSrc: "/nextup.jpg"
     },
 ]

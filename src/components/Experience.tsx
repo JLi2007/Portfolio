@@ -38,7 +38,7 @@ function Experience() {
 
       <div className="container text-center">
         <br /> <br />
-        <p>What's a human without experiences</p>
+        <p style={{marginTop: '50px'}}>What's a human without experiences</p>
         <div id="boxes" className="row">
           <div className="col-6 col-sm-4 box left top">
             <h3>{experiences[0].title}</h3>
@@ -67,7 +67,7 @@ function Experience() {
             <h5>{experiences[3].heading}</h5>
             <p>{experiences[3].description}</p>
           </div>
-          
+
         </div>
 
       </div>

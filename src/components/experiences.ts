@@ -15,7 +15,7 @@ export const experiences: Experiences[]=[
     {
         title:  "RythmHacks - September 2023",
         heading: "Successful Debut",
-        description: "Mission succesful. Working project and a victory in a subcategory. All whilst being sleep deprived and heavily addicted to munching.",
+        description: "Mission successful. Working project and a victory in a subcategory. All whilst being sleep deprived and heavily addicted to munching.",
         imageSrc: "/rythmhacks.jpg"
     },
     {
