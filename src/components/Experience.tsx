@@ -55,7 +55,7 @@ function Experience() {
           </div>
 
           <div className="col-6 col-sm-4 box left bottom">
-           <h3>{experiences[2].title}</h3>
+            <h3>{experiences[2].title}</h3>
             <img src={experiences[2].imageSrc}/>
             <h5>{experiences[2].heading}</h5>
             <p>{experiences[2].description}</p>

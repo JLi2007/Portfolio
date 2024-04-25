@@ -160,6 +160,19 @@
     margin-left: 10px;
 }
 
+@media (max-width: 900px){
+    #bootstrap-overides-home #col1{
+        width: 100%;
+    }
+    #bootstrap-overides-home #carouselExampleCaptions{
+        width: 100vw;
+    }
+    #bootstrap-overides-home #col2{
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /* Experience--------------------------------------------------------------------------------------- */
 #bootstrap-overides-experience{
     height: auto;    
