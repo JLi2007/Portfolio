@@ -10,10 +10,16 @@
     --font-color: #84a9d1;
     --unique-color-1: #ef4d4d;
     --unique-color-2: #65e393;
-    --unique-color-3: #ff3ef5;
-    --unique-color-4: #ffe23e;
-    --unique-color-5: #983eff;
-    --unique-color-6: #3ea8ff;
+    --unique-color-3: #6583e8;
+    --unique-color-4: #f5e16f;
+    --unique-color-5: #a567ec;
+    --unique-color-6: #4defe4;
+
+    --text-gradient-light:linear-gradient(
+        40deg,
+        rgb(90, 140, 241) 20%,
+        rgb(108, 186, 242) 80%
+    );
 
     --font-OS: 'Open Sans', sans-serif;
     --font-RW: 'Raleway', sans-serif;
@@ -163,9 +169,10 @@
 }
 
 #bootstrap-overides-home #inside p{
-    margin-bottom: 25px;
     flex-wrap: wrap;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
 }
 
 #bootstrap-overides-home .gradient-title{
@@ -189,6 +196,46 @@
         color: transparent;
         display: flex;
         justify-content: center;
+}
+
+#bootstrap-overides-home .gradient1{
+    background: linear-gradient(
+        40deg,
+        rgb(90, 140, 241) 20%,
+        rgb(108, 186, 242) 80%
+    );
+    background-clip: text;
+    color: transparent;
+}
+
+#bootstrap-overides-home .button{
+    display: flex;
+    justify-content: center;
+}
+
+#bootstrap-overides-home #button{
+    background:linear-gradient(
+        40deg,
+        rgb(7, 31, 79) 20%,
+        rgb(13, 67, 105) 80%
+    );
+    border-color: var(--font-color);
+}#bootstrap-overides-home #button a{
+    color: var(--font-color);
+}
+
+#bootstrap-overides-home #button:hover{
+    background:linear-gradient(
+        40deg,
+        rgb(90, 140, 241) 20%,
+        rgb(108, 186, 242) 80%
+    );
+    color: var(--dark-color);
+    border-color: var(--dark-color);
+    transition: 0.4s ease-in-out;
+} #bootstrap-overides-home #button:hover a{
+    color: var(--dark-color);
+    transition: 0.4s ease-in-out;
 }
 
 @media (max-width: 900px){

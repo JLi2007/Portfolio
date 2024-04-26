@@ -60,26 +60,31 @@ function Home() {
 
             <div id="inside">
               <h3 className="gradient" style={{padding: '5px'}}>Meet James</h3>
-              <p>Coming from Waterloo, <span style={{color:'#ef4d4d'}}>James Li</span> is a high school student with aspirations in the Computer Science. 
+              <p>Coming from Waterloo, <span style={{color:'#ef4d4d'}}>James Li</span> is a high school student with aspirations in Computer Science. 
                 Beginning to <span><a style={{color: '#65e393'}} href="https://github.com/JLi2007">program</a></span> only as recently as May 2023, he is unfazed by the late onset. He sees it only as fuel.
-                Since then, James has attended 3 Hackathons and obtained a executive position at RythmHacks, a hackathon that aims to showcase youth innovation. 
+                Since then, James has attended <span><a href="https://devpost.com/lijames9532" style={{color: '#a567ec'}}>3 Hackathons</a></span> and obtained a executive position at <span><a href="https://rythmhacks.ca/" style={{color:'#6583e8'}}>Rythmhacks</a></span>, 
+                a hackathon that aims to showcase youth innovation. 
               </p>
 
-              <p>As a late bloomer, he constantly reminds himself how life isn't a race. 
-                Striving to focus on self-improvement, James is deeply devoted to becoming 1% better than yesterday.
+              <p>Having delved into coding later than many, he constantly reminds himself how life isn't a race. 
+                Striving to focus on self-improvement, James is deeply devoted to becoming <span className='gradient1'>1% better than yesterday</span>.
               </p>
 
-              <p>One project that's keeping him busy in 2024 is his weather project. 
+              <p>One project that's keeping him busy in 2024 is his <span><a href="https://github.com/JLi2007/TS_WeatherProject_Mongo" style={{color:'#4defe4'}}>weather project</a></span>. 
                 Referred by him as a “journey” that showcases his growth as a developer. 
               </p>
 
               <p style={{paddingBottom: '20px'}}>It's not all about academics.
                 Football⚽ has been one of his greatest passions since young. 
-                Described as a disciplined player with high game IQ, he trains with an academy. 
+                Described as a disciplined player with high game IQ, he trains with an <span><a href="https://www.bvbinternationalacademy-waterloo.com/" style={{color:'#f5e16f'}}>academy</a></span>. 
                 He is also a part of a competitive school team that has vivid hopes to make it far into the high school bracket.
               </p>
             </div>
-            <button type="button" className="btn btn-outline-info">Download my Resume</button>
+
+            <div className="button">
+              <button type="button" id="button" className="btn btn-outline-info"><a href="https://drive.google.com/file/d/1s73bKW2nadhLyfqTex0mMzrZZyXRfGAQ/view?usp=sharing" style={{textDecoration:'none', fontWeight:'bold'}}>View my Resume</a></button>
+            </div>
+
           </div>
         </div>
       </div>
