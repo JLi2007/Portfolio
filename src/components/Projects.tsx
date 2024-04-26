@@ -22,7 +22,7 @@ function Projects() {
           minWidth: 200.00,
           scale: 1.00,
           scaleMobile: 1.00,
-          color: 0x7a91b0,
+          color: 0x84a9d1,
           backgroundColor: 0x020121,
           points: 10.00,
           maxDistance: 13.00,
