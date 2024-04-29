@@ -22,7 +22,7 @@ function Experience() {
           minWidth: 200.00,
           scale: 1.00,
           scaleMobile: 1.00,
-          color: 0x84a9d1,
+          color: 0x769fca,
           backgroundColor: 0x020121,
           points: 8.00,
           maxDistance: 13.00,

@@ -71,14 +71,16 @@ function Home() {
               </p>
 
               <p>One project that's keeping him busy in 2024 is his <span><a href="https://github.com/JLi2007/TS_WeatherProject_Mongo" style={{color:'#4defe4'}}>weather project</a></span>. 
-                Referred by him as a <span className='gradient4'>journey</span> that showcases his growth as a developer. 
+                Referred by him as a <span className='gradient4'>"journey"</span> that showcases his growth as a developer. 
               </p>
 
               <p style={{paddingBottom: '20px'}}>It's not all about academics.
                 <span className='gradient5'> Football</span>⚽ has been one of his greatest <strong>passions</strong> since young. 
-                Described as a disciplined player with high game IQ, he trains with an <span><a href="https://www.bvbinternationalacademy-waterloo.com/" style={{color:'#e9d45c'}}>academy</a></span>. 
-                He is also a part of a <strong>competitive</strong> school team that has vivid hopes to make it far into the high school bracket.
+                Described as a disciplined player with high game IQ, he plays for an <span><a href="https://www.bvbinternationalacademy-waterloo.com/" style={{color:'#e9d45c'}}>academy</a></span>. 
+                He is also a part of a <strong>competitive</strong> school team that has vivid hopes to make it deep into the high school bracket.
               </p>
+
+              <p style={{fontSize:'10px', display:'flex', justifyContent:'center'}}>**The rest of my portfolio isn't this serious, don't worry</p>
             </div>
 
             <div className="button">

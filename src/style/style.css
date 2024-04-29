@@ -7,7 +7,7 @@
     --dark-color-bg: #020121;
     --navbar-color: conic-gradient(from 90deg at 50% 0%, #468eec, 30%, #3b86e8, #307de1);
     --active-color: rgba(0, 0, 0, 0.856);
-    --font-color: #84a9d1;
+    --font-color: #769fca;
     --unique-color-1: #ef4d4d;
     --unique-color-2: #65e393;
     --unique-color-3: #6583e8;
@@ -437,7 +437,6 @@
     filter: brightness(0.85);
     width: 100%;
     height: 100vh;
-    margin: 0;
 }
 
 #bootstrap-overides-quotes .inside-text{
@@ -448,38 +447,46 @@
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-right: calc(100% - 90%);
-    margin-left: calc(100% - 90%);
-    margin-top: calc(100% - 88%);
-}
-
-#bootstrap-overides-quotes p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 130px;
+    width: 80%;
+    margin-left: 10%;
 }
 
 #bootstrap-overides-quotes .typewriter{
     display: flex;
-    font-size: 3.5rem;
+    font-size: 3.0rem;
 }
 
-@media (max-width: 1125px){
+@media (min-width: 1200px){
     #bootstrap-overides-quotes .inside-text{
-        width: 99%;
-        margin-top: calc(100% - 80%);
+        width: 75%;
+        margin-left: 12.5%;
     }
-    #bootstrap-overides-quotes .typewriter{
-        font-size: 2.8rem;
+}
+@media (min-width: 1300px){
+    #bootstrap-overides-quotes .inside-text{
+        width: 66%;
+        margin-left: 17%;
+    }
+}
+@media (max-width: 1000px){
+    #bootstrap-overides-quotes .inside-text{
+        width: 86%;
+        margin-left: 7%;
     }
 }
 @media (max-width: 800px){
     #bootstrap-overides-quotes .inside-text{
-        width: 99%;
-        margin-top: calc(100% - 70%);
+        width: 90%;
+        margin-left: 5%;
     }
     #bootstrap-overides-quotes .typewriter{
-        font-size: 2.5rem;
+        font-size: 2.75rem;
+    }
+}
+@media (max-width: 600px){
+    #bootstrap-overides-quotes .typewriter{
+        font-size: 2.25rem;
     }
 }
 
