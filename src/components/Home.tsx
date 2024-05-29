@@ -22,7 +22,7 @@ function Home() {
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src="/hackathons.jpg" className="d-block w-100" style={{objectFit:'cover'}}/>
+                  <img src="/hackathonn.jpg" className="d-block w-100" style={{objectFit:'cover'}}/>
                   <div className="carousel-caption d-none d-md-block">
                     <p className='carousel-p2'>Hackathon shenanigans</p>
                   </div>

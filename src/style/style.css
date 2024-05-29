@@ -180,8 +180,8 @@
     font-size: 1.1rem;
     background: linear-gradient(
         50deg,
-        rgb(146, 14, 47) 30%,
-        rgb(204, 21, 82) 100%
+        rgb(243, 42, 109) 30%,
+        rgb(235, 35, 42) 100%
     );
     background-clip: text;
     color: transparent;
@@ -210,8 +210,8 @@
 #bootstrap-overides-home #col1 .carousel-b2{
     background: linear-gradient(
         50deg,
-        rgb(146, 14, 47) 30%,
-        rgb(204, 21, 82) 100%
+        rgb(243, 42, 109) 30%,
+        rgb(235, 35, 42) 100%
     );
     background-clip: content-box;
 }
@@ -363,6 +363,9 @@
     }
     #bootstrap-overides-home #carouselExampleCaptions{
         width: 100vw;
+    }
+    #bootstrap-overides-home #carouselExampleCaptions p {
+        font-size: 1.5rem !important;
     }
     #bootstrap-overides-home #col2{
         width: 100%;
