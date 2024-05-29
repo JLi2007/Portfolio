@@ -6,35 +6,31 @@ function Home() {
     <div id="bootstrap-overides-home" className='background-container'>
       <div className="text-center">
         <div className="row align-items-start">
-          <div id="col1" className="col-6">
-            
-            <div id="carouselExampleCaptions" className="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="4000">
+          <div id="col1" className="col-6"> 
+            <div id="carouselExampleCaptions" className="carousel slide w-100" data-bs-ride="carousel" data-bs-interval="4000" style={{height: '100%'}}>
               <div className="carousel-indicators">
-                <button id="button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                <button id="button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button id="button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button id="button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active carousel-b1" aria-current="true" aria-label="Slide 1"></button>
+                <button id="button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" className="carousel-b2" aria-label="Slide 2"></button>
+                <button id="button" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" className="carousel-b3" aria-label="Slide 3"></button>
               </div>
 
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img src="/carousel1.jpg" className="d-block w-100"/>
+                  <img src="/footy.jpg" className="d-block w-100" style={{objectFit:'cover'}}/>
                   <div className="carousel-caption d-none d-md-block">
-                    <h5>First slide label</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <p className='carousel-p1'>"Soccer is played with the mind"</p>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src="/carousel2.jpg" className="d-block w-100"/>
+                  <img src="/hackathons.jpg" className="d-block w-100" style={{objectFit:'cover'}}/>
                   <div className="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <p className='carousel-p2'>Hackathon shenanigans</p>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <img src="/carousel3.jpg" className="d-block w-100"/>
+                  <img src="/nature.jpg" className="d-block w-100" style={{objectFit:'cover'}}/>
                   <div className="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <p className='carousel-p3'>A breath of fresh air is nice once in a while</p>
                   </div>
                 </div>
               </div>
@@ -49,13 +45,12 @@ function Home() {
               </button>
 
             </div>
-
           </div>
 
           <div id="col2" className="col-6">
             <div id="title" className='gradient-title'>
               <h1 >Student • Coder • Athlete </h1>
-              <h6 style={{padding: '5px', marginLeft: '10px'}}>In that order</h6>
+              <h6 style={{marginTop:'50px', padding: '5px', marginLeft: '10px'}}>In that order</h6>
             </div>
 
             <div id="inside">
@@ -80,7 +75,7 @@ function Home() {
                 He is also a part of a <strong>competitive</strong> school team that has vivid hopes to make it deep into the high school bracket.
               </p>
 
-              <p style={{fontSize:'10px', display:'flex', justifyContent:'center'}}>**The rest of my portfolio isn't this serious, don't worry</p>
+              <p style={{fontSize:'10px', display:'flex', justifyContent:'center'}}>**The rest of my portfolio isn't this serious, don't worry.  Last updated May 28, 2024</p>
             </div>
 
             <div className="button">

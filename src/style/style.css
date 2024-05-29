@@ -7,14 +7,9 @@
     --dark-color-bg: #020121;
     --navbar-color: conic-gradient(from 90deg at 50% 0%, #468eec, 30%, #3b86e8, #307de1);
     --active-color: rgba(0, 0, 0, 0.856);
-    --font-color: #769fca;
-    --unique-color-1: #ef4d4d;
-    --unique-color-2: #65e393;
-    --unique-color-3: #6583e8;
-    --unique-color-4: #e9d45c;
-    --unique-color-5: #a567ec;
-    --unique-color-6: #4defe4;
-
+    --font-color: #628cb9;
+    --font-color-old: #769fca;
+    
     --text-gradient-light:linear-gradient(
         40deg,
         rgb(90, 140, 241) 20%,
@@ -36,6 +31,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--dark-color);
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--font-color);
+    border-radius: 15px;
+  }
 
 .background-container{
     background: var(--gradient-color);
@@ -102,7 +112,12 @@
 #bootstrap-overides-home{
     width: 100%;
     height: auto;
-    margin-top: 55px;
+    margin-top: 5vh;
+}
+
+#bootstrap-overides-home #col1,
+#bootstrap-overides-home #col2{
+    height: 95vh;
 }
 
 #bootstrap-overides-home #carouselExampleCaptions{
@@ -115,7 +130,7 @@
 }
 
 #bootstrap-overides-home #carouselExampleCaptions img{
-    height: 100vh;
+    height: 95vh;
 }
 
 #bootstrap-overides-home #carouselExampleCaptions h5, 
@@ -126,6 +141,10 @@
 
 #bootstrap-overides-home #carouselExampleCaptions h5{
     font-weight: bold;
+}
+
+#bootstrap-overides-home #carouselExampleCaptions .carousel-caption{
+    display: block !important;
 }
 
 #bootstrap-overides-home .bg-primary{
@@ -144,10 +163,71 @@
      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='983eff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
+/* */
+#bootstrap-overides-home #col1 .carousel-p1{
+    font-weight: bold;
+    background: linear-gradient(
+        50deg,
+        rgb(90, 140, 241) 30%,
+        rgb(108, 186, 242) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+#bootstrap-overides-home #col1 .carousel-p2{
+    font-weight: bold;
+    font-size: 1.1rem;
+    background: linear-gradient(
+        50deg,
+        rgb(146, 14, 47) 30%,
+        rgb(204, 21, 82) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+#bootstrap-overides-home #col1 .carousel-p3{
+    font-weight: bold;
+    background: linear-gradient(
+        50deg,
+        rgb(100, 255, 224) 30%,
+        rgb(133, 255, 52) 100%
+    );
+    background-clip: text;
+    color: transparent;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+#bootstrap-overides-home #col1 .carousel-b1{
+    background: linear-gradient(
+        50deg,
+        rgb(90, 140, 241) 30%,
+        rgb(108, 186, 242) 100%
+    );
+    background-clip: content-box;
+}
+#bootstrap-overides-home #col1 .carousel-b2{
+    background: linear-gradient(
+        50deg,
+        rgb(146, 14, 47) 30%,
+        rgb(204, 21, 82) 100%
+    );
+    background-clip: content-box;
+}
+#bootstrap-overides-home #col1 .carousel-b3{
+    background: linear-gradient(
+        50deg,
+        rgb(100, 255, 224) 30%,
+        rgb(133, 255, 52) 100%
+    );
+    background-clip: content-box;
+}
+/* */
+
 #bootstrap-overides-home #col2{
     text-align: left;
     display: inline;
-    height: 100vh;
 }
 
 #bootstrap-overides-home #title h1, #bootstrap-overides-home #title h6{
@@ -277,7 +357,7 @@
     transition: 0.6s ease-in-out;
 }
 
-@media (max-width: 900px){
+@media (max-width: 1203px){
     #bootstrap-overides-home #col1{
         width: 100%;
     }
@@ -288,6 +368,7 @@
         width: 100%;
         text-align: center;
         height: auto;
+        padding-left: 30px;
     }
 }
 
@@ -317,6 +398,20 @@
     width: 40%;
     margin-bottom: 30px;
 }
+
+#bootstrap-overides-experience .box::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  #bootstrap-overides-experience .box::-webkit-scrollbar-track {
+    background: var(--font-color);
+    border-radius: 15px;
+  }
+  
+  #bootstrap-overides-experience .box::-webkit-scrollbar-thumb {
+    background: var(--dark-color);
+    border-radius: 15px;
+  }
 
 #bootstrap-overides-experience .right{
     margin-left: 15px;

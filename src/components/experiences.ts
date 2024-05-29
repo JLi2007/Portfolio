@@ -25,9 +25,9 @@ export const experiences: Experiences[]=[
         imageSrc: "/delta.jpg"
     },
     {
-        title:  "GDSCHacks - May 2024",
-        heading: "Upcoming Hackathon",
-        description: 'According to some accounts, the first words that came out of my mouth were "ambition pays off!" Lets see...',
-        imageSrc: "/next.jpg"
+        title:  "Hawkhacks - May 2024",
+        heading: "Let Me Cook",
+        description: 'Due to my grind, I had the genuine abilities to contribute to an ambitious project. I cooked up the whole backend by myself, but my team just missed the final touches to achieve success',
+        imageSrc: "/hawk.jpg"
     },
 ]
