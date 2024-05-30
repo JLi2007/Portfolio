@@ -54,7 +54,7 @@ function Home() {
             </div>
 
             <div id="inside">
-              <h3 className="gradient" style={{padding: '5px'}}>Meet James</h3>
+              <h3 className="gradient" style={{padding: '5px',textAlign:'left'}}>Meet James</h3>
               <p>Coming from Waterloo, <span className="gradient1">James Li</span> is a high school student with aspirations in Computer Science. 
                 Beginning to <span><a style={{color: '#65e393'}} href="https://github.com/JLi2007">program</a></span> only as recently as <strong>May 2023</strong>, he is unfazed by the late onset. He sees it only as fuel.
                 Since then, James has attended <span><a href="https://devpost.com/lijames9532" style={{color: '#a567ec'}}>3 Hackathons</a></span> and obtained a executive position at <span><a href="https://rythmhacks.ca/" style={{color:'#6583e8'}}>Rythmhacks</a></span>, 

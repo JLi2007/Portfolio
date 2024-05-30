@@ -274,8 +274,6 @@
         );
         background-clip: text;
         color: transparent;
-        display: flex;
-        justify-content: center;
 }
 
 #bootstrap-overides-home .gradient1{
@@ -372,6 +370,17 @@
         text-align: center;
         height: auto;
         padding-left: 30px;
+    }
+}
+
+@media (min-height: 1100px){
+    #bootstrap-overides-home{
+        font-size: 1.5rem;
+    }
+
+    #bootstrap-overides-home{
+        margin-top: 3vh;
+        height: 97vh;
     }
 }
 

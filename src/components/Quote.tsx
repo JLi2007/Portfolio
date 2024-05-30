@@ -34,7 +34,7 @@ function Quote() {
                 typewriter.typeString(quotes[currentQuote].text)
                   .start()
                   .typeString('<br>')
-                if(currentQuote==8 || currentQuote==0){
+                if(currentQuote==9 || currentQuote==0){
                   typewriter.typeString(quotes[currentQuote].author)
                   .start()
                   .pauseFor(shortPause)
