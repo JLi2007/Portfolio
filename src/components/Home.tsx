@@ -219,7 +219,7 @@ function Home() {
                 className="btn btn-outline-info"
               >
                 <a
-                  href="https://drive.google.com/file/d/1s73bKW2nadhLyfqTex0mMzrZZyXRfGAQ/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1coTufwao93ftq9M3EmrdbeUmP-J6wzk-/view?usp=sharing"
                   style={{ textDecoration: "none", fontWeight: "600" }}
                 >
                   View Resume

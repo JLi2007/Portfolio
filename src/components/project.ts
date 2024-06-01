@@ -31,6 +31,20 @@ export const projects: Projects[] = [
     imageSrc: "/plat.jpg",
   },
   {
+    title: "Portfolio Website",
+    heading: "What You're Seeing Now!",
+    link: "https://jli2007.pages.dev/projects",
+    description: "A website about the one and only James Li",
+    imageSrc: "/personal-website.png",
+  },
+  {
+    title: "Moodify",
+    heading: "😀 😡 😭 😇 🤨 😩",
+    link: "https://github.com/Mausmato/Moodify?tab=readme-ov-file",
+    description: "Connecting facial expression with music, Moodify generates a playlist based off of detected mood. ",
+    imageSrc: "/moodify1.jpg",
+  },
+  {
     title: "More To Come!",
     heading: "Nothing to see here",
     link: "https://en.wikipedia.org/wiki/Monkey",

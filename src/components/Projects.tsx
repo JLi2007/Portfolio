@@ -43,7 +43,7 @@ function Projects() {
         Well every developer has projects, right?
       </p>
       <div id="boxes-group" className="container text-center">
-        <div id="boxes-1" className="row justify-content-center boxes">
+        <div className="row justify-content-center boxes">
           <div className="col-7 box">
             <h3>{projects[0].title}</h3>
             <img src={projects[0].imageSrc} />
@@ -55,7 +55,7 @@ function Projects() {
           </div>
         </div>
 
-        <div id="boxes-2" className="row justify-content-center boxes">
+        <div className="row justify-content-center boxes">
           <div className="col-4 box">
             <h3>{projects[1].title}</h3>
             <img src={projects[1].imageSrc} />
@@ -77,8 +77,8 @@ function Projects() {
           </div>
         </div>
 
-        <div id="boxes-3" className="row justify-content-evenly boxes">
-          <div className="col-6 box">
+        <div className="row justify-content-center boxes">
+          <div className="col-4 box">
             <h3>{projects[3].title}</h3>
             <img src={projects[3].imageSrc} />
             <br />
@@ -86,6 +86,28 @@ function Projects() {
               <h5>{projects[3].heading}</h5>
             </a>
             <p>{projects[3].description}</p>
+          </div>
+
+          <div className="col-4 box">
+            <h3>{projects[4].title}</h3>
+            <img src={projects[4].imageSrc} />
+            <br />
+            <a className="link" href={projects[4].link}>
+              <h5>{projects[4].heading}</h5>
+            </a>
+            <p>{projects[4].description}</p>
+          </div>
+        </div>
+
+        <div className="row justify-content-evenly boxes">
+          <div className="col-6 box">
+            <h3>{projects[5].title}</h3>
+            <img src={projects[5].imageSrc} />
+            <br />
+            <a className="link" href={projects[5].link}>
+              <h5>{projects[5].heading}</h5>
+            </a>
+            <p>{projects[5].description}</p>
           </div>
         </div>
       </div>
