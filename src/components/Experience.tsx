@@ -5,7 +5,16 @@ import * as THREE from "three";
 import "../style/style.css";
 import { experiences } from "./experiences";
 
+const chunkArray = <T,>(arr: T[], size: number): T[][] => {
+  const result: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size));
+  }
+  return result;
+};
+
 function Experience() {
+  const experienceChunks = chunkArray(experiences, 2);
   const [vantaEffect, setVantaEffect] = useState(null);
   const vantaRef = useRef(null);
 
@@ -39,38 +48,27 @@ function Experience() {
       className="background-container"
       ref={vantaRef}
     >
-      <div className="container text-center">
+      <div id="boxes-experience" className="container text-center">
         <br /> <br />
-        <p style={{ marginTop: "50px" }}>What's a human without experiences</p>
-        <div id="boxes" className="row">
-          <div className="col-6 col-sm-4 box left top">
-            <h3>{experiences[0].title}</h3>
-            <img src={experiences[0].imageSrc} />
-            <h5>{experiences[0].heading}</h5>
-            <p>{experiences[0].description}</p>
-          </div>
-
-          <div className="col-6 col-sm-4 box right top">
-            <h3>{experiences[1].title}</h3>
-            <img src={experiences[1].imageSrc} />
-            <h5>{experiences[1].heading}</h5>
-            <p>{experiences[1].description}</p>
-          </div>
-
-          <div className="col-6 col-sm-4 box left bottom">
-            <h3>{experiences[2].title}</h3>
-            <img src={experiences[2].imageSrc} />
-            <h5>{experiences[2].heading}</h5>
-            <p>{experiences[2].description}</p>
-          </div>
-
-          <div className="col-6 col-sm-4 box right bottom">
-            <h3>{experiences[3].title}</h3>
-            <img src={experiences[3].imageSrc} />
-            <h5>{experiences[3].heading}</h5>
-            <p>{experiences[3].description}</p>
-          </div>
-        </div>
+        <p style={{ marginTop: "50px" }}>More so a timeline of my journey</p>
+        {experienceChunks.map((chunk, chunkIndex) => (
+          <div key={chunkIndex} className="row justify-content-center boxes">
+            {chunk.map((experience, index) => {
+                    const globalIndex = chunkIndex * 2 + index;
+                    return (
+                      <div key={globalIndex} className="col-4 box">
+                          <h2 style={{letterSpacing:'1.25px'}}>{experience.title}</h2>
+                          <h4>{experience.date}</h4>
+                          <hr />
+                          <img src={experience.imageSrc} />
+                          <hr />
+                          <h5>{experience.heading}</h5>
+                          <p>{experience.description}</p>
+                      </div>
+                    );
+              })}
+            </div>
+        ))}
       </div>
     </div>
   );

@@ -134,6 +134,7 @@ function Home() {
                   <a
                     style={{ color: "#65e393" }}
                     href="https://github.com/JLi2007"
+                    target="_blank"
                   >
                     program
                   </a>
@@ -145,13 +146,18 @@ function Home() {
                   <a
                     href="https://devpost.com/lijames9532"
                     style={{ color: "#a567ec" }}
+                    target="_blank"
                   >
                     3 Hackathons
                   </a>
                 </span>{" "}
                 and obtained a executive position at{" "}
                 <span>
-                  <a href="https://rythmhacks.ca/" style={{ color: "#6583e8" }}>
+                  <a
+                    href="https://rythmhacks.ca/"
+                    style={{ color: "#6583e8" }}
+                    target="_blank"
+                  >
                     Rythmhacks
                   </a>
                 </span>
@@ -173,6 +179,7 @@ function Home() {
                   <a
                     href="https://github.com/JLi2007/TS_WeatherProject_Mongo"
                     style={{ color: "#4defe4" }}
+                    target="_blank"
                   >
                     weather project
                   </a>
@@ -191,13 +198,13 @@ function Home() {
                   <a
                     href="https://www.bvbinternationalacademy-waterloo.com/"
                     style={{ color: "#e9d45c" }}
+                    target="_blank"
                   >
                     academy
                   </a>
                 </span>
-                . He is also a part of a <strong>competitive</strong> school
-                team that has vivid hopes to make it deep into the high school
-                bracket.
+                . He was also a part of a <strong>competitive</strong> school
+                team that made it deep into the high school bracket.
               </p>
 
               <p
@@ -208,7 +215,7 @@ function Home() {
                 }}
               >
                 **The rest of my portfolio isn't this serious, don't worry. Last
-                updated May 28, 2024
+                updated June 11, 2024
               </p>
             </div>
 
@@ -221,6 +228,7 @@ function Home() {
                 <a
                   href="https://drive.google.com/file/d/1coTufwao93ftq9M3EmrdbeUmP-J6wzk-/view?usp=sharing"
                   style={{ textDecoration: "none", fontWeight: "600" }}
+                  target="_blank"
                 >
                   View Resume
                 </a>
@@ -233,6 +241,7 @@ function Home() {
                 <a
                   href="https://www.linkedin.com/in/james-li-a81004275/"
                   style={{ textDecoration: "none", fontWeight: "600" }}
+                  target="_blank"
                 >
                   View Linkedin
                 </a>

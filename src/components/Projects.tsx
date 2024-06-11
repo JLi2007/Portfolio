@@ -5,7 +5,16 @@ import { projects } from "./project.ts";
 
 import "../style/style.css";
 
+const chunkArray = <T,>(arr: T[], size: number): T[][] => {
+  const result: T[][] = [];
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size));
+  }
+  return result;
+};
+
 function Projects() {
+  const projectChunks = chunkArray(projects, 2);
   const [vantaEffect, setVantaEffect] = useState(null);
   const vantaRef = useRef(null);
 
@@ -42,74 +51,28 @@ function Projects() {
       <p style={{ marginTop: "100px" }}>
         Well every developer has projects, right?
       </p>
-      <div id="boxes-group" className="container text-center">
-        <div className="row justify-content-center boxes">
-          <div className="col-7 box">
-            <h3>{projects[0].title}</h3>
-            <img src={projects[0].imageSrc} />
-            <br />
-            <a className="link" href={projects[0].link}>
-              <h5>{projects[0].heading}</h5>
-            </a>
-            <p>{projects[0].description}</p>
+      <div id="boxes-projects" className="container text-center">
+        {projectChunks.map((chunk, chunkIndex) => (
+          <div key={chunkIndex} className="row justify-content-center boxes">
+            {chunk.map((project, index) => {
+              const globalIndex = chunkIndex * 2 + index;
+              return (
+                <div key={globalIndex} className="col-4 box">
+                  <img src={project.imageSrc} />
+                  <hr />
+                  <h2>{project.title}</h2>
+                  <h4>{project.date}</h4>
+                  <br />
+                  <hr />
+                  <a className="link" href={project.link} target="_blank">
+                    <h5>{project.heading}</h5>
+                  </a>
+                  <p>{project.description}</p>
+                </div>
+              );
+            })}
           </div>
-        </div>
-
-        <div className="row justify-content-center boxes">
-          <div className="col-4 box">
-            <h3>{projects[1].title}</h3>
-            <img src={projects[1].imageSrc} />
-            <br />
-            <a className="link" href={projects[1].link}>
-              <h5>{projects[1].heading}</h5>
-            </a>
-            <p>{projects[1].description}</p>
-          </div>
-
-          <div className="col-4 box">
-            <h3>{projects[2].title}</h3>
-            <img src={projects[2].imageSrc} />
-            <br />
-            <a className="link" href={projects[2].link}>
-              <h5>{projects[2].heading}</h5>
-            </a>
-            <p>{projects[2].description}</p>
-          </div>
-        </div>
-
-        <div className="row justify-content-center boxes">
-          <div className="col-4 box">
-            <h3>{projects[3].title}</h3>
-            <img src={projects[3].imageSrc} />
-            <br />
-            <a className="link" href={projects[3].link}>
-              <h5>{projects[3].heading}</h5>
-            </a>
-            <p>{projects[3].description}</p>
-          </div>
-
-          <div className="col-4 box">
-            <h3>{projects[4].title}</h3>
-            <img src={projects[4].imageSrc} />
-            <br />
-            <a className="link" href={projects[4].link}>
-              <h5>{projects[4].heading}</h5>
-            </a>
-            <p>{projects[4].description}</p>
-          </div>
-        </div>
-
-        <div className="row justify-content-evenly boxes">
-          <div className="col-6 box">
-            <h3>{projects[5].title}</h3>
-            <img src={projects[5].imageSrc} />
-            <br />
-            <a className="link" href={projects[5].link}>
-              <h5>{projects[5].heading}</h5>
-            </a>
-            <p>{projects[5].description}</p>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
