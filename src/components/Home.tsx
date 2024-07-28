@@ -50,7 +50,7 @@ function Home() {
                   />
                   <div className="carousel-caption d-none d-md-block">
                     <p className="carousel-p1">
-                      "Soccer is played with the mind"
+                      "Football is played with the mind"
                     </p>
                   </div>
                 </div>
@@ -132,7 +132,7 @@ function Home() {
                 student with aspirations in Computer Science. Beginning to{" "}
                 <span>
                   <a
-                    style={{ color: "#65e393" }}
+                    style={{ color: "#90e028" }}
                     href="https://github.com/JLi2007"
                     target="_blank"
                   >
@@ -150,8 +150,14 @@ function Home() {
                   >
                     3 Hackathons
                   </a>
+                  ,
                 </span>{" "}
-                and obtained a executive position at{" "}
+                and currently on his first{" "}
+                <span className="gradient6">software internship</span>.
+              </p>
+
+              <p>
+                In addition, he is an executive at{" "}
                 <span>
                   <a
                     href="https://rythmhacks.ca/"
@@ -161,7 +167,17 @@ function Home() {
                     Rythmhacks
                   </a>
                 </span>
-                , a hackathon that aims to showcase{" "}
+                {" "}and a co-founder and lead at the{" "}
+                <span>
+                  <a
+                    href="https://neoleague.dev/"
+                    style={{ color: "#34D399" }}
+                    target="_blank"
+                  >
+                    Neo Developer league
+                  </a>
+                </span>
+                , both of which aim to showcase{" "}
                 <span className="gradient2">youth innovation</span>.
               </p>
 
@@ -215,7 +231,7 @@ function Home() {
                 }}
               >
                 **The rest of my portfolio isn't this serious, don't worry. Last
-                updated June 11, 2024
+                updated July 28, 2024
               </p>
             </div>
 

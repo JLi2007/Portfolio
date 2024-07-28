@@ -16,7 +16,7 @@
     #468eec,
     30%,
     #3b86e8,
-    #307de1
+    #e1c630
   );
   --active-color: rgba(0, 0, 0, 0.856);
   --font-color: #628cb9;
@@ -338,6 +338,16 @@
     40deg,
     rgb(245, 71, 71) 20%,
     rgb(237, 76, 211) 80%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+#bootstrap-overides-home .gradient6 {
+  background: linear-gradient(
+    20deg,
+    rgb(108, 186, 242) 20%,
+    rgb(45, 172, 218) 80%
   );
   background-clip: text;
   color: transparent;
