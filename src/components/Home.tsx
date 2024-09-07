@@ -44,7 +44,7 @@ function Home() {
               <div className="carousel-inner">
                 <div className="carousel-item active">
                   <img
-                    src="/footy.jpg"
+                    src="/home/footy.jpg"
                     className="d-block w-100"
                     style={{ objectFit: "cover" }}
                   />
@@ -56,7 +56,7 @@ function Home() {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src="/hackathonn.jpg"
+                    src="/home/hackathon.jpg"
                     className="d-block w-100"
                     style={{ objectFit: "cover" }}
                   />
@@ -66,7 +66,7 @@ function Home() {
                 </div>
                 <div className="carousel-item">
                   <img
-                    src="/nature.jpg"
+                    src="/home/nature.jpg"
                     className="d-block w-100"
                     style={{ objectFit: "cover" }}
                   />
@@ -230,8 +230,8 @@ function Home() {
                   justifyContent: "center",
                 }}
               >
-                **The rest of my portfolio isn't this serious, don't worry. Last
-                updated July 28, 2024
+                **Last
+                updated September 7, 2024
               </p>
             </div>
 

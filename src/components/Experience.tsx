@@ -58,7 +58,7 @@ function Experience() {
                     return (
                       <div key={globalIndex} className="col-4 box">
                           <h2 style={{letterSpacing:'1.25px'}}>{experience.title}</h2>
-                          <h4>{experience.date}</h4>
+                          <h4 className="signature">{experience.date}</h4>
                           <hr />
                           <img src={experience.imageSrc} />
                           <hr />

@@ -61,7 +61,7 @@ function Projects() {
                   <img src={project.imageSrc} />
                   <hr />
                   <h2>{project.title}</h2>
-                  <h4>{project.date}</h4>
+                  <h4 className="signature">{project.date}</h4>
                   <br />
                   <hr />
                   <a className="link" href={project.link} target="_blank">

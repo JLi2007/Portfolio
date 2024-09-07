@@ -20,7 +20,7 @@ export const experiences: Experiences[] = [
     date: "September 2023",
     heading: "Successful Debut",
     description:
-      "Mission successful. Working project and a victory in a subcategory. All whilst being sleep deprived and heavily addicted to munching.",
+      "Mission successful. Working project and #1 in a subcategory. All whilst being sleep deprived and heavily addicted to munching.",
     imageSrc: "/rythmhacks.jpg",
   },
   {
@@ -36,7 +36,7 @@ export const experiences: Experiences[] = [
     date: "January 2024",
     heading: "Ups and Downs",
     description:
-      "Entered with no team and no expectations. Exited with a team and ambitions to reach newer heights in the future. The project broke, however 😢",
+      "Entered with no team and no expectations. Exited with a team and ambitions to reach newer heights in the future. The project broke though 😢",
     imageSrc: "/delta.jpg",
   },
   {
@@ -44,7 +44,7 @@ export const experiences: Experiences[] = [
     date: "January 2024",
     heading: "Organizing a Hackathon",
     description:
-      "Enjoyed my experience so much that I applied to become an executive for next iteration. Got accepted and our team is cooking up something special (+1000 aura)",
+      "Geniunely enjoyed my experience as a hacker. As a result, I applied to become an executive for next iteration. Got accepted and our team is cooking up something special (+1000 aura)",
     imageSrc: "/exec.jpg",
   },
   {
@@ -52,15 +52,31 @@ export const experiences: Experiences[] = [
     date: "May 2024",
     heading: "Let Me Cook",
     description:
-      "Due to my grind, I had the genuine abilities to contribute to an ambitious project. I cooked up the whole backend by myself, but my team just missed the final touches to achieve success",
-    imageSrc: "/hawk.jpg",
+      "For the first time, I had genuine abilities to contribute to an ambitious project. I cooked up the whole backend by myself, but my team just missed some final touches (shi broke last minute)",
+    imageSrc: "/moodify.png",
   },
   {
-    title: "[Upcoming] Internship",
-    date: "July-August 2024",
-    heading: "First Internship",
+    title: "Hack The 6ix",
+    date: "August 2024",
+    heading: "Fine Margins",
     description:
-      "Excited to start my first ever internship during the Summer! Time to get to work 🔒.",
-    imageSrc: "/lake.png",
+      "Based on our fake backstory of patients with Dementia, we developed a ML model to help patients remember names and memories of loved ones. Placed top 5 at Ht6.",
+    imageSrc: "/ht6.jpg",
+  },
+  {
+    title: "Internship V1",
+    date: "July-August 2024",
+    heading: "Software Intern",
+    description:
+      "Developed a versatile, multi-language data processing and visualization tool using Python (Streamlit), C#, and MSSQL.",
+    imageSrc: "/lakes-logo.jpg",
+  },
+  {
+    title: "Internship V2",
+    date: "July-August 2024",
+    heading: "Junior Developer",
+    description:
+      "Enhanced various aspects of the Tauria video conferencing app built with React.js, and developed automated tests using Playwright.",
+    imageSrc: "/tauria-logo.png",
   },
 ];
