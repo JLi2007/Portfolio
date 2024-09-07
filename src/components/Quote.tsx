@@ -20,14 +20,9 @@ function Quote() {
   return (
     <div id="bootstrap-overides-quotes" className="background-container">
       <div className="inside-text">
-        <p>
-          <img
-            src="/logo-blur.png"
-            style={{ width: "30px", height: "30px", marginRight: "5px" }}
-          ></img>{" "}
+        <p className="signature">
           James Li Productions
         </p>
-
         <div className="typewriter">
           <Typewriter
             options={{
