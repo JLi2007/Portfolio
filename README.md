@@ -1,5 +1,5 @@
 # Personal Landing Page
 
-# [JLi2007.pages.dev](https://jli2007.pages.dev/)
+# [jame.li](https://jame.li/)
 
 [matthew singer](https://www.linkedin.com/in/matthewsingerr/)
