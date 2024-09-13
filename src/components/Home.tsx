@@ -148,7 +148,7 @@ function Home() {
                     style={{ color: "#a567ec" }}
                     target="_blank"
                   >
-                    3 Hackathons
+                    4 Hackathons
                   </a>
                   ,
                 </span>{" "}
