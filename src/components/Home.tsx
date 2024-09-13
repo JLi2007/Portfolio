@@ -231,7 +231,7 @@ function Home() {
                 }}
               >
                 **Last
-                updated September 7, 2024
+                updated September 12, 2024
               </p>
             </div>
 
