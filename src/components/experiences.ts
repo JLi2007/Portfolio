@@ -65,7 +65,7 @@ export const experiences: Experiences[] = [
   },
   {
     title: "Internship V1",
-    date: "July-August 2024",
+    date: "July 2024",
     heading: "Software Intern",
     description:
       "Developed a versatile, multi-language data processing and visualization tool using Python (Streamlit), C#, and MSSQL.",
@@ -73,7 +73,7 @@ export const experiences: Experiences[] = [
   },
   {
     title: "Internship V2",
-    date: "July-August 2024",
+    date: "August 2024",
     heading: "Junior Developer",
     description:
       "Enhanced various aspects of the Tauria video conferencing app built with React.js, and developed automated tests using Playwright.",

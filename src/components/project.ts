@@ -37,8 +37,8 @@ export const projects: Projects[] = [
   {
     title: "Portfolio Website",
     date: "May 2024",
-    heading: "What You're Seeing Now!",
-    link: "https://jli2007.pages.dev/projects",
+    heading: "Jame.Li",
+    link: "https://jame.li/projects",
     description: "A website about the one and only James Li",
     imageSrc: "/personal-website.png",
   },
@@ -58,4 +58,12 @@ export const projects: Projects[] = [
     description: "Uniquely designed webcam model with a ML backend and Streamlit frontend to comfort the grim realities of Dementia. ",
     imageSrc: "/IdentiBear.png",
   },
+  {
+    title: "NeoLeague",
+    date: "September 2024",
+    heading: "Website and Dashboard",
+    link: "https://github.com/Neodev-League/NeoDevLeague",
+    description: "Frontend and backend for Neo League's landing and dashboard with auth ",
+    imageSrc: "/neodev.png",
+  }
 ];

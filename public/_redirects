@@ -1,0 +1,5 @@
+# Redirects from what the browser requests to what we serve
+/home                /
+/experience          /https://jame.li/experience
+/projects            /https://jame.li/projects
+/quotes              /https://jame.li/quotes
