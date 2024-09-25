@@ -15,7 +15,7 @@ export const projects: Projects[] = [
     link: "https://github.com/Mausmato/Footprint",
     description:
       "In short, Footprint marks the start of my creation journey... (Lets ignore the unreadable lines of calamity and 200+ commits in the span of 24 hours)",
-    imageSrc: "/footprint.jpg",
+    imageSrc: "/projects/footprint.jpg",
   },
   {
     title: "Weathermap",
@@ -24,7 +24,7 @@ export const projects: Projects[] = [
     link: "https://github.com/JLi2007/TS_WeatherProject_Mongo",
     description:
       "A simple weather application by appearence. But outside the conventional minds, one would know it marks a journey of peaks and valleys. Persistance and discovery. Ambition and aspiration. Switzerland and Nigeria - (👑 of yap) ",
-    imageSrc: "/weathermap.png",
+    imageSrc: "/projects/weathermap.png",
   },
   {
     title: "Plat.ai",
@@ -32,7 +32,7 @@ export const projects: Projects[] = [
     heading: "Startup Foundations",
     link: "https://pitchplat.app/",
     description: "Waiting list for a startup project. Minor contributor. ",
-    imageSrc: "/plat.jpg",
+    imageSrc: "/projects/plat.jpg",
   },
   {
     title: "Portfolio Website",
@@ -40,7 +40,7 @@ export const projects: Projects[] = [
     heading: "Jame.Li",
     link: "https://jame.li/projects",
     description: "A website about the one and only James Li",
-    imageSrc: "/personal-website.png",
+    imageSrc: "/projects/personal-website.png",
   },
   {
     title: "Moodify",
@@ -48,7 +48,7 @@ export const projects: Projects[] = [
     heading: "😀 😡 😭 😇 🤨 😩",
     link: "https://github.com/Mausmato/Moodify?tab=readme-ov-file",
     description: "Connecting facial expression with music, Moodify generates a playlist based off of detected mood. ",
-    imageSrc: "/moodify.png",
+    imageSrc: "/projects/moodify.png",
   },
   {
     title: "IdentiBear",
@@ -56,7 +56,7 @@ export const projects: Projects[] = [
     heading: "Dementia buddy",
     link: "https://github.com/Solaror0/Identibear",
     description: "Uniquely designed webcam model with a ML backend and Streamlit frontend to comfort the grim realities of Dementia. ",
-    imageSrc: "/IdentiBear.png",
+    imageSrc: "/projects/IdentiBear.png",
   },
   {
     title: "NeoLeague",
@@ -64,6 +64,6 @@ export const projects: Projects[] = [
     heading: "Website and Dashboard",
     link: "https://github.com/Neodev-League/NeoDevLeague",
     description: "Frontend and backend for Neo League's landing and dashboard with auth ",
-    imageSrc: "/neodev.png",
+    imageSrc: "/projects/neodev.png",
   }
 ];
