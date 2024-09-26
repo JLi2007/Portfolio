@@ -17,8 +17,16 @@ export const quotes: Quote[] = [
     author: " - Bruce Lee",
   },
   {
+    text: "Hold up let me think of Philosophical thoughts",
+    author: " - Gazzola, 2025",
+  },
+  {
     text: "Don't think small and expect to have a big life.",
     author: " - Marianne Williamson",
+  },
+  {
+    text: "They only remember if you did it or didn't do it, they will never remember the excuses 🙀",
+    author: " - Gazzola, 2024",
   },
   {
     text: "If opportunity doesn't knock, build a door",
@@ -30,7 +38,7 @@ export const quotes: Quote[] = [
   },
   {
     text: "Practice makes perfect, yet nobody is perfect. So why practice?",
-    author: " - Us before a calculus test",
+    author: " - Us before calculus test",
   },
   {
     text: "Perfection is not attainable, but if we chase perfection we may catch excellence",
