@@ -33,6 +33,10 @@ export const quotes: Quote[] = [
     author: " - Milton Berle",
   },
   {
+    text: "School is so uninspirational 🗣️",
+    author: " - Jeffrey Zang, 2024",
+  },
+  {
     text: "Nobody has enough talent to live on talent alone.",
     author: " - Arsene Wenger",
   },
